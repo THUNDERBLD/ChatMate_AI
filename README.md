@@ -6,7 +6,7 @@ A cross-platform AI-powered desktop application that suggests **context-aware, t
 
 
 ## Demo
-[![Watch the demo]](https://youtu.be/74U89rqjy7c?si=dis1J8-oHxZYb9R4)
+[![Watch the demo](https://res.cloudinary.com/dx5umjy5q/image/upload/v1749029570/w6d2s4f0kxzbjhwkoios.jpg)](https://youtu.be/74U89rqjy7c?si=dis1J8-oHxZYb9R4)
 
 ---
 
