@@ -4,6 +4,10 @@ A cross-platform AI-powered desktop application that suggests **context-aware, t
 
 > 🧠 Your chats, your tone — made faster with AI.
 
+
+## Demo
+[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
 ---
 
 ## ✨ Features
@@ -67,13 +71,19 @@ You can also run npm run build to generate a production build of the frontend se
 
 
 📁 Project Structure
-.
+
 ├── src
+
 │   ├── electron         # Electron main process code (tsconfig.json inside)
+
 │   ├── renderer         # React frontend with Vite
+
 │   └── shared           # Shared interfaces/configs (optional)
+
 ├── dist-electron        # Compiled Electron output
+
 ├── public               # Static assets
+
 └── package.json
 
 
@@ -91,5 +101,7 @@ Contributions are welcome! Feel free to fork the repo and open a pull request.
 
 🔗 Let's connect!
 If you like the project or want to collaborate:
+
 💼 [LinkedIn](https://www.linkedin.com/in/faraz-mohammed-162289227)
+
 💬 Drop a ⭐ if this repo helped you!
