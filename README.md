@@ -6,7 +6,7 @@ A cross-platform AI-powered desktop application that suggests **context-aware, t
 
 
 ## Demo
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg)](https://youtu.be/74U89rqjy7c?si=dis1J8-oHxZYb9R4)
+[![Watch the demo]](https://youtu.be/74U89rqjy7c?si=dis1J8-oHxZYb9R4)
 
 ---
 
