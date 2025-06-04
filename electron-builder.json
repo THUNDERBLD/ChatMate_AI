@@ -1,0 +1,17 @@
+{
+    "appId": "com.THUNDERBLD.StealthMode",
+    "files": ["dist-electron", "dist-react"],
+    "icon": "./deskIcon.png",
+    "mac": {
+        "category": "public.app-category.utilities",
+        "target": "dmg",
+        "icon": "build/icon.icns"
+    },
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    },
+    "win": {
+        "target": ["portable", "msi"]
+    }
+}
