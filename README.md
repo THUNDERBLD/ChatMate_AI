@@ -1,50 +1,95 @@
-# React + TypeScript + Vite
+# ⚡ Speed Chat Suggestion System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cross-platform AI-powered desktop application that suggests **context-aware, tone-matched replies** for real-time messaging apps like WhatsApp or Messenger. Built using **Electron**, **React**, and **Gemini API**, it enhances your chat experience by reducing typing fatigue and speeding up communication.
 
-Currently, two official plugins are available:
+> 🧠 Your chats, your tone — made faster with AI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 💡 **AI Reply Suggestions** – Generates smart replies based on the chat context.
+- 🧬 **Tone Matching** – Adapts to the user’s unique writing style using LLM prompts.
+- ⚡ **One-Click Replying** – Edit and send suggestions instantly.
+- 💻 **Cross-Platform** – Available on **macOS**, **Windows**, and **Linux**.
+- 🔐 **Privacy-Aware** – Local processing options and secured chat handling.
+- 🎨 **Modern UI** – Built with TailwindCSS and Lucide icons for a sleek desktop experience.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+- **Frontend:** React + TailwindCSS
+- **Backend:** Node.js + TypeScript
+- **Electron Integration:** Electron + Electron Builder
+- **AI API:** Gemini (configurable for OpenAI, local models, etc.)
+- **Build Tooling:** Vite + TypeScript + ESLint
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js `v18+`
+- npm or yarn
+- Gemini API Key (or OpenAI API Key if adapted)
+
+---
+
+### 🧪 Development
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/speed-chat-suggester.git
+cd speed-chat-suggester
+
+# Install dependencies
+npm install
+
+# Start development (React + Electron)
+npm run dev
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+📦 Build for Production
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Build for macOS (arm64)
+npm run dist:mac
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Build for Windows
+npm run dist:win
+
+# Build for Linux
+npm run dist:linux
+
+You can also run npm run build to generate a production build of the frontend separately.
+
+
+📁 Project Structure
+.
+├── src
+│   ├── electron         # Electron main process code (tsconfig.json inside)
+│   ├── renderer         # React frontend with Vite
+│   └── shared           # Shared interfaces/configs (optional)
+├── dist-electron        # Compiled Electron output
+├── public               # Static assets
+└── package.json
+
+
+🔑 Environment Variables
+Create a .env file in the root and add:
+
+VITE_GEMINI_API_KEY=your_api_key_here
+Note: Use .env.production for production builds.
+
+📦 Packaging Info
+This app uses electron-builder to generate installable binaries. You can find builds in the dist/ folder after running the relevant dist:* commands.
+
+🤝 Contributing
+Contributions are welcome! Feel free to fork the repo and open a pull request.
+
+🔗 Let's connect!
+If you like the project or want to collaborate:
+💼 [LinkedIn](https://www.linkedin.com/in/faraz-mohammed-162289227)
+💬 Drop a ⭐ if this repo helped you!
